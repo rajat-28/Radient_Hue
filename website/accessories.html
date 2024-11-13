@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Accessories - RadiantHue</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add font-awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h1>RadiantHue</h1>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="haircare.html"><i class="fas fa-cogs"></i> Haircare</a></li>
+                <li><a href="skincare.html"><i class="fas fa-spa"></i> Skincare</a></li>
+                <li><a href="accessories.html"><i class="fas fa-gem"></i> Accessories</a></li>
+                <li><a href="makeup.html"><i class="fas fa-lipstick"></i> Makeup</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Accessories Products Section -->
+    <section id="accessories" class="section">
+        <h2>Beauty Accessories</h2>
+        <p>Complete your beauty routine with our stunning accessories.</p>
+        <div class="product-gallery">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="ac1.jpg" alt="Bangles">
+                <h3>Elegant Bangles</h3>
+                <p>Stylish bangles for every occasion, adding a touch of elegance. A classic piece of jewelry that will never go out of style.</p>
+                <button class="add-to-cart-btn" onclick="addToCart({
+                    name: 'Elegant Bangles', 
+                    description: 'Stylish bangles for every occasion, adding a touch of elegance. A classic piece of jewelry that will never go out of style.', 
+                    price: 25.00, 
+                    image: 'ac1.jpg'
+                })">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="ac2.jpg" alt="Hair Accessories">
+                <h3>Trendy Hair Accessories</h3>
+                <p>Beautiful clips, combs, and bands to enhance your hairstyle.</p>
+                <button class="add-to-cart-btn" onclick="addToCart({
+                    name: 'Trendy Hair Accessories', 
+                    description: 'Beautiful clips, combs, and bands to enhance your hairstyle.', 
+                    price: 25.00, 
+                    image: 'ac2.jpg'
+                })">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="ac3.jpg" alt="Hair Straightener">
+                <h3>Hair Straightener</h3>
+                <p>Get sleek and smooth hair with our advanced ceramic straighteners. Includes Keratin treatment for shiny hair.</p>
+                <button class="add-to-cart-btn" onclick="addToCart({
+                    name: 'Hair Straightener', 
+                    description: 'Get sleek and smooth hair with our advanced ceramic straighteners. Includes Keratin treatment for shiny hair.', 
+                    price: 25.00, 
+                    image: 'ac3.jpg'
+                })">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="ac4.jpg" alt="Hair Curler">
+                <h3>Hair Curler</h3>
+                <p>Create voluminous curls with our easy-to-use hair curlers.</p>
+                <button class="add-to-cart-btn" onclick="addToCart({
+                    name: 'Hair Curler', 
+                    description: 'Create voluminous curls with our easy-to-use hair curlers.', 
+                    price: 25.00, 
+                    image: 'ac4.jpg'
+                })">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 RadiantHue. All Rights Reserved.</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
